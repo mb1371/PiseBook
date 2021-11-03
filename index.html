@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main File Css -->
+    <link rel="stylesheet" href="css/pisebook.css">
+    <!-- File Of screen -->
+    <link rel="stylesheet" href="css/style-screen.css">
+    <!-- Normalize File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- WebFonts File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>PiseBook</title>
+</head>
+<body>
+    <!-- start Header -->
+    <header class="head">
+        <div class="logo-icons">
+            <!-- logo of page -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <!-- some icons -->
+            <div class="icons">
+                <a href="#">
+                    <img src="images/notification.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/inbox.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/video.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="search-profile">
+            <div class="search">
+                <span>
+                    <a href="#">
+                        <img src="images/search.png" alt="">
+                    </a>
+                </span>
+                <input type="search" id="input" placeholder="Search">
+            </div>
+            <div class="profile">
+                <a href="#" class="account" onclick="myFunction()">
+                    <img src="images/profile-pic.png" alt="">
+                </a>
+                <div class="menu-profile" id="my-profile">
+                    <div class="top-header">
+                        <div>
+                            <a href="#">
+                                <img src="images/profile-pic.png" alt="">
+                                <span class="name-account">john nicholson</span>
+                            </a>
+                            <a href="#" class="see-profile">see your profile</a>
+                        </div>
+                        <div id="dark-btn">
+                            <span></span>
+                        </div>
+                    </div>
+                    <hr style="clear: both; margin-top: 20px;"/>
+                    <div class="feedback">
+                        <a href="#">
+                            <img src="images/feedback.png" alt="">
+                            <p>give feedback</p>
+                        </a>
+                        <a href="#" class="feed">help us to improve the new design</a>
+                    </div>
+                    <hr style="clear: both; margin-top: 20px;"/>
+                    <div class="activity">
+                        <div class="items">
+                            <a href="#">
+                                <img src="images/covid.png" alt="">
+                                <p>covid-19</p>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <img src="images/birthday.png" alt="">
+                                <p>birthday</p>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <img src="images/friends.png" alt="">
+                                <p>friends</p>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <img src="images/group.png" alt="">
+                                <p>groups</p>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <img src="images/marketplace.png" alt="">
+                                <p>marketplace</p>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <img src="images/watch.png" alt="">
+                                <p>watch video</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="more-option">
+                        <a href="#">
+                            <img src="images/setting.png" alt="">
+                            <span>setting & privacy</span>
+                            <img src="images/arrow.png" class="arrow" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/help.png" alt="">
+                            <span>help & support</span>
+                            <img src="images/arrow.png" class="arrow" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/display.png" alt="">
+                            <span>display & accessibility</span>
+                            <img src="images/arrow.png" class="arrow" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/logout.png" alt="">
+                            <span>logout</span>
+                            <img src="images/arrow.png" class="arrow" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="for-small-screen">
+        <a href="#">
+            <img src="images/profile-home.png" alt="">
+        </a>
+        <a href="#">
+            <img src="images/inbox.png" alt="">
+        </a>
+        <a href="#">
+            <img src="images/video.png" alt="">
+        </a>
+        <a href="#">
+            <img src="images/notification.png" alt="">
+        </a>
+</div>
+    <!-- End Header -->
+    <!-- Start Section => parent -->
+    <section class="parent">
+        <!-- Start First Column Left -->
+        <div class="first-column">
+            <div class="activite">
+                <a href="#">
+                    <img src="images/news.png" alt="">
+                    <span>latest news</span>
+                </a>
+                <a href="#">
+                    <img src="images/friends.png" alt="">
+                    <span>friends</span>
+                </a>
+                <a href="#">
+                    <img src="images/group.png" alt="">
+                    <span>group</span>
+                </a>
+                <a href="#">
+                    <img src="images/marketplace.png" alt="">
+                    <span>marketplace</span>
+                </a>
+                <a href="#">
+                    <img src="images/watch.png" alt="">
+                    <span>watch</span>
+                </a>
+                <a href="#" class="see-more">see more</a>
+            </div>
+            <!-- Shortcuts -->
+            <div class="shortcuts">
+                <h3>your shortcuts</h3>
+                <a href="#">
+                    <img src="images/shortcut-1.png" alt="">
+                    <span>web developers</span>
+                </a>
+                <a href="#">
+                    <img src="images/shortcut-2.png" alt="">
+                    <span>web design cours</span>
+                </a>
+                <a href="#">
+                    <img src="images/shortcut-3.png" alt="">
+                    <span>full stack development</span>
+                </a>
+                <a href="#">
+                    <img src="images/shortcut-4.png" alt="">
+                    <span>website experts</span>
+                </a>
+                <a href="#" class="see-more">see more</a>
+            </div>
+        </div>
+        <!-- Start First Column Left -->
+        <!-- Start Home page -->
+        <div class="home-page">
+            <!-- Start Status -->
+            <div class="status">
+                <div class="storys">
+                    <a href="#">
+                        <img src="images/upload.png" alt="">
+                    </a>
+                    <p class="profile-name">post story</p>
+                </div>
+                <div class="storys">
+                    <a href="#">
+                        <img src="images/member-1.png" alt="">
+                    </a>
+                    <p class="profile-name">alison</p>
+                </div>
+                <div class="storys">
+                    <a href="#">
+                        <img src="images/member-2.png" alt="">
+                    </a>
+                    <p class="profile-name">jackson</p>
+                </div>
+                <div class="storys">
+                    <a href="#">
+                        <img src="images/member-3.png" alt="">
+                    </a>
+                    <p class="profile-name">samona</p>
+                </div>
+                <div class="storys">
+                    <a href="#">
+                        <img src="images/member-4.png" alt="">
+                    </a>
+                    <p class="profile-name">john doe</p>
+                </div>
+                <div class="storys">
+                    <a href="#">
+                        <img src="images/member-5.png" alt="">
+                    </a>
+                    <p class="profile-name">ali karo</p>
+                </div>
+                <div class="storys">
+                    <a href="#">
+                        <img src="images/member-7.png" alt="">
+                    </a>
+                    <p class="profile-name">alikhandro</p>
+                </div>
+                <div class="storys">
+                    <a href="#">
+                        <img src="images/member-9.png" alt="">
+                    </a>
+                    <p class="profile-name">ailon musk</p>
+                </div>
+            </div>
+            <!-- End Status -->
+            <!-- Start Create Post -->
+            <div class="create-post">
+                <a href="#" class="img-post">
+                    <img src="images/profile-pic.png" alt="">
+                </a>
+                <div class="content">
+                    <h4>john nicholson</h4>
+                    <p class="public">public <i class="fas fa-caret-down"></i></p>
+                    <input class="write-post" placeholder="what's on your mind, john?">
+                    <div class="icons-post">
+                        <a href="#">
+                            <img src="images/live-video.png" alt="">
+                            <span>live  video</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/photo.png" alt="">
+                            <span>phot/video</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/feeling.png" alt="">
+                            <span>feling/activity</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Create Post -->
+            <!-- Start last post -->
+            <div class="last-post">
+                <div class="john-post">
+                    <div class="name-accou">
+                        <div class="info">
+                            <a href="#" class="post-profile">
+                                <img src="images/profile-pic.png" alt="">
+                            </a>
+                            <h4>john nicholson</h4>
+                            <p class="date-post">june 24 2021, 13:40pm</p>
+                        </div>
+                        <div class="see-more">
+                            <a href="#" class="more">
+                                <img src="images/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="what-say">
+                        subscribe <span class="tag">@easy tutorials</span> YouTube channel to watch more videos on
+                        website development and ui designs <span class="hashtag">#EasyTutorials #YouTubeChannel</span>
+                    </p>
+                    <div class="post">
+                        <img src="images/feed-image-1.png" alt="">
+                    </div>
+                    <div class="activity-post">
+                        <a href="#">
+                            <img src="images/like-blue.png" alt="">
+                            <span>like</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/comments.png" alt="">
+                            <span>comment</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/share.png" alt="">
+                            <span>share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="john-post">
+                    <div class="name-accou">
+                        <div class="info">
+                            <a href="#" class="post-profile">
+                                <img src="images/profile-pic.png" alt="">
+                            </a>
+                            <h4>john nicholson</h4>
+                            <p class="date-post">june 24 2021, 13:40pm</p>
+                        </div>
+                        <div class="see-more">
+                            <a href="#" class="more">
+                                <img src="images/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="what-say">
+                        subscribe <span class="tag">@easy tutorials</span> YouTube channel to watch more videos on
+                        website development and ui designs <span class="hashtag">#EasyTutorials #YouTubeChannel</span>
+                    </p>
+                    <div class="post">
+                        <img src="images/feed-image-2.png" alt="">
+                    </div>
+                    <div class="activity-post">
+                        <a href="#">
+                            <img src="images/like-blue.png" alt="">
+                            <span>like</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/comments.png" alt="">
+                            <span>comment</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/share.png" alt="">
+                            <span>share</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Start Add Freinds -->
+                <div class="add-friend">
+                    <h3>people you may know</h3>
+                    <div class="requests-fr">
+                        <div class="friend">
+                            <div class="image-friend">
+                                <a href="#">
+                                    <img src="images/photo1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="name-friends">valvierdi sin</h4>
+                                <a href="#">
+                                    <img src="images/photo2.png" class="image-mutual" alt="">
+                                    <p class="mutual-friends">7 mutual friends</p>
+                                </a>
+                                <div href="#" class="add">
+                                    <span>add friend</span>
+                                </div>
+                                <div href="#" class="remove">
+                                    <span>remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="image-friend">
+                                <a href="#">
+                                    <img src="images/member-6.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="name-friends">valvierdi sin</h4>
+                                <a href="#">
+                                    <img src="images/photo2.png" class="image-mutual" alt="">
+                                    <p class="mutual-friends">7 mutual friends</p>
+                                </a>
+                                <div href="#" class="add">
+                                    <span>add friend</span>
+                                </div>
+                                <div href="#" class="remove">
+                                    <span>remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="image-friend">
+                                <a href="#">
+                                    <img src="images/photo2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="name-friends">valvierdi sin</h4>
+                                <a href="#">
+                                    <img src="images/photo2.png" class="image-mutual" alt="">
+                                    <p class="mutual-friends">7 mutual friends</p>
+                                </a>
+                                <div href="#" class="add">
+                                    <span>add friend</span>
+                                </div>
+                                <div href="#" class="remove">
+                                    <span>remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="image-friend">
+                                <a href="#">
+                                    <img src="images/photo3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="name-friends">valvierdi sin</h4>
+                                <a href="#">
+                                    <img src="images/photo2.png" class="image-mutual" alt="">
+                                    <p class="mutual-friends">7 mutual friends</p>
+                                </a>
+                                <div href="#" class="add">
+                                    <span>add friend</span>
+                                </div>
+                                <div href="#" class="remove">
+                                    <span>remove</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="see">
+                        <span class="see-all">see all <i class="fas fa-chevron-right"></i></span>
+                    </a>
+                </div>
+                <!-- End Add Freinds -->
+                <div class="john-post">
+                    <div class="name-accou">
+                        <div class="info">
+                            <a href="#" class="post-profile">
+                                <img src="images/profile-pic.png" alt="">
+                            </a>
+                            <h4>john nicholson</h4>
+                            <p class="date-post">june 24 2021, 13:40pm</p>
+                        </div>
+                        <div class="see-more">
+                            <a href="#" class="more">
+                                <img src="images/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="what-say">
+                        subscribe <span class="tag">@easy tutorials</span> YouTube channel to watch more videos on
+                        website development and ui designs <span class="hashtag">#EasyTutorials #YouTubeChannel</span>
+                    </p>
+                    <div class="post">
+                        <img src="images/feed-image-3.png" alt="">
+                    </div>
+                    <div class="activity-post">
+                        <a href="#">
+                            <img src="images/like.png" alt="">
+                            <span>like</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/comments.png" alt="">
+                            <span>comment</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/share.png" alt="">
+                            <span>share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="john-post">
+                    <div class="name-accou">
+                        <div class="info">
+                            <a href="#" class="post-profile">
+                                <img src="images/profile-pic.png" alt="">
+                            </a>
+                            <h4>john nicholson</h4>
+                            <p class="date-post">june 24 2021, 13:40pm</p>
+                        </div>
+                        <div class="see-more">
+                            <a href="#" class="more">
+                                <img src="images/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="what-say">
+                        subscribe <span class="tag">@easy tutorials</span> YouTube channel to watch more videos on
+                        website development and ui designs <span class="hashtag">#EasyTutorials #YouTubeChannel</span>
+                    </p>
+                    <div class="post">
+                        <img src="images/feed-image-4.png" alt="">
+                    </div>
+                    <div class="activity-post">
+                        <a href="#">
+                            <img src="images/like-blue.png" alt="">
+                            <span>like</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/comments.png" alt="">
+                            <span>comment</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/share.png" alt="">
+                            <span>share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="john-post">
+                    <div class="name-accou">
+                        <div class="info">
+                            <a href="#" class="post-profile">
+                                <img src="images/profile-pic.png" alt="">
+                            </a>
+                            <h4>john nicholson</h4>
+                            <p class="date-post">june 24 2021, 13:40pm</p>
+                        </div>
+                        <div class="see-more">
+                            <a href="#" class="more">
+                                <img src="images/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="what-say">
+                        subscribe <span class="tag">@easy tutorials</span> YouTube channel to watch more videos on
+                        website development and ui designs <span class="hashtag">#EasyTutorials #YouTubeChannel</span>
+                    </p>
+                    <div class="post">
+                        <img src="images/feed-image-5.png" alt="">
+                    </div>
+                    <div class="activity-post">
+                        <a href="#">
+                            <img src="images/like.png" alt="">
+                            <span>like</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/comments.png" alt="">
+                            <span>comment</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/share.png" alt="">
+                            <span>share</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Start Add Freinds 2 -->
+                <div class="add-friend">
+                    <h3>people you may know</h3>
+                    <div class="requests-fr">
+                        <div class="friend">
+                            <div class="image-friend">
+                                <a href="#">
+                                    <img src="images/photo4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="name-friends">valvierdi sin</h4>
+                                <a href="#">
+                                    <img src="images/photo2.png" class="image-mutual" alt="">
+                                    <p class="mutual-friends">7 mutual friends</p>
+                                </a>
+                                <div href="#" class="add">
+                                    <span>add friend</span>
+                                </div>
+                                <div href="#" class="remove">
+                                    <span>remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="image-friend">
+                                <a href="#">
+                                    <img src="images/photo5.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="name-friends">valvierdi sin</h4>
+                                <a href="#">
+                                    <img src="images/photo2.png" class="image-mutual" alt="">
+                                    <p class="mutual-friends">7 mutual friends</p>
+                                </a>
+                                <div href="#" class="add">
+                                    <span>add friend</span>
+                                </div>
+                                <div href="#" class="remove">
+                                    <span>remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="image-friend">
+                                <a href="#">
+                                    <img src="images/member-8.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="name-friends">valvierdi sin</h4>
+                                <a href="#">
+                                    <img src="images/photo2.png" class="image-mutual" alt="">
+                                    <p class="mutual-friends">7 mutual friends</p>
+                                </a>
+                                <div href="#" class="add">
+                                    <span>add friend</span>
+                                </div>
+                                <div href="#" class="remove">
+                                    <span>remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="image-friend">
+                                <a href="#">
+                                    <img src="images/photo6.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="name-friends">valvierdi sin</h4>
+                                <a href="#">
+                                    <img src="images/photo2.png" class="image-mutual" alt="">
+                                    <p class="mutual-friends">7 mutual friends</p>
+                                </a>
+                                <div href="#" class="add">
+                                    <span>add friend</span>
+                                </div>
+                                <div href="#" class="remove">
+                                    <span>remove</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="see">
+                        <span class="see-all">see all <i class="fas fa-chevron-right"></i></span>
+                    </a>
+                </div>
+                <!-- End Add Freinds 2 -->
+            </div>
+            <!-- End last post -->
+            <!-- Start button load more -->
+            <div class="load-more">
+                <button>load more</button>
+            </div>
+            <!-- Start button load more -->
+        </div>
+        <!-- End Home page -->
+        <!-- Start Finaly Column -->
+        <div class="finaly-column">
+            <!-- Start Cart Birthday -->
+            <div class="birthday-cart">
+                <div class="birthday">
+                    <img src="images/birthday.png" alt="">
+                    <h3>birthdays</h3>
+                    <span class="close" onclick="closeBtn()">x</span>
+                </div>
+                <div class="content">
+                    <p><span class="cleint">John Doe</span>'s birthday is today.</p>
+                </div>
+            </div>
+            <div class="undo" onclick="undo()">
+                <p>if you want to undo the birthday priss <span>undo</span></p>
+            </div>
+            <!-- End Cart Birthday -->
+            <!-- Start Events -->
+            <div class="events-cart">
+                <div class="top-head">
+                    <h3>events</h3>
+                    <a href="#" class="see-all">See all</a>
+                </div>
+                <div class="events">
+                    <div class="cart">
+                        <div class="day">18</div>
+                        <div class="mondth">march</div>
+                    </div>
+                    <div class="content">
+                        <h4>social meedia</h4>
+                        <a href="#">
+                            <img src="images/location.png" alt="">
+                        </a>
+                        <p class="location">willson tech park</p>
+                        <a href="#" class="more-info">more info</a>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="cart">
+                        <div class="day">22</div>
+                        <div class="mondth">june</div>
+                    </div>
+                    <div class="content">
+                        <h4>mobile marketing</h4>
+                        <a href="#">
+                            <img src="images/location.png" alt="">
+                        </a>
+                        <p class="location">willson tech park</p>
+                        <a href="#" class="more-info">more info</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Events -->
+            <!-- Start Contact -->
+            <div class="contact">
+                <div class="top-head">
+                    <h3>contact</h3>
+                    <div class="icons">
+                        <a href="#">
+                            <img src="images/search.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/more.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="friends-contact">
+                    <div class="chat">
+                        <a href="#">
+                            <img src="images/member-1.png" alt="">
+                            <span class="chat-green"></span>
+                        </a>
+                        <span class="name-friend">alison mina</span>
+                    </div>
+                    <div class="chat">
+                        <a href="#">
+                            <img src="images/member-2.png" alt="">
+                            <span class="chat-green"></span>
+                        </a>
+                        <span class="name-friend">jackson aston</span>
+                    </div>
+                    <div class="chat">
+                        <a href="#">
+                            <img src="images/member-3.png" alt="">
+                            <span class="chat-green"></span>
+                        </a>
+                        <span class="name-friend">samona rose</span>
+                    </div>
+                    <div class="chat">
+                        <a href="#">
+                            <img src="images/member-4.png" alt="">
+                            <span class="chat-green"></span>
+                        </a>
+                        <span class="name-friend">john doe</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact -->
+        </div>
+        <!-- End Finaly Column -->
+        <!-- Start Button Scroll To top -->
+            <button class="scroll">top</button>
+        <!-- End Button Scroll To top -->
+    </section>
+    <!-- End Section => parent -->
+    <!-- Start footer -->
+    <footer>
+        <p>created by<span> mr. mb1_371 </span> | all rights reserved</p>
+    </footer>
+    <!-- End footer -->
+    <script src="js/main.js"></script>
+</body>
+</html>
