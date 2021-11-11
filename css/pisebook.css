@@ -69,6 +69,7 @@ a{
     width: 2.5rem;
     border-radius: 50%;
     float: left;
+    cursor: pointer;
 }
 .head .search-profile .profile .account::after{
     content: '';
@@ -90,10 +91,9 @@ a{
     position: absolute;
     top: 52px;
     right: -4%;
-    padding: 20px;
     box-shadow: 0 2px 9px 1px rgb(0 0 0 / 40%);
-    /* max-height: 0; */
-    display: none;
+    max-height: 0;
+    /* display: none; */
     overflow: hidden;
     transition: max-height .3s;
     -webkit-transition: max-height .3s;
@@ -101,7 +101,12 @@ a{
     -ms-transition: max-height .3s;
     -o-transition: max-height .3s;
 }
-
+.head .search-profile .profile .shown {
+    max-height: 420px;
+}
+.head .search-profile .profile .menu-profile .child{
+    padding: 20px;
+}
 .head .search-profile .profile .menu-profile .top-header a{
     display: block
 }

@@ -1,11 +1,9 @@
 // profile code
-function myFunction() {
-   var x = document.getElementById("my-profile");
-   if (x.style.display === "none") {
-     x.style.display = "block";
-   } else {
-     x.style.display = "none";
-   }
+let button = document.querySelector(".account");
+button.onclick = function () {
+  let menu = document.querySelector(".menu-profile");
+  console.log(menu);
+  menu.classList.toggle("shown");
 }
 // scroll top button 
 const btnScroll = document.querySelector('.scroll');
